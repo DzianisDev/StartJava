@@ -117,8 +117,7 @@ public class CyclesTheme {
         System.out.println("DEC CHAR");
         
         for(int i = 0; i<=127; i++){
-            char ca = (char)i;
-            System.out.println(i+" "+ca);
+            System.out.println(i+" "+(char)i);
         }
     }
 }
