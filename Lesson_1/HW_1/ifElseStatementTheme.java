@@ -26,7 +26,7 @@ public class ifElseStatementTheme {
         char firstLetterOfName = name.charAt(0);
         if (firstLetterOfName == 'M') {
             System.out.println("First letter of your name = M");
-        } else if (firstLetterOfName == 'I'){
+        } else if (firstLetterOfName == 'I') {
             System.out.println("First letter of your name = I");
         } else {
             System.out.println("First Letter of your name = " + firstLetterOfName);
