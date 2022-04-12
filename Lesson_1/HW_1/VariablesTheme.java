@@ -1,17 +1,22 @@
 public class VariablesTheme {
-    public static void main(String[] args){
+    public static void main(String[] args) {
        //Создание переменных и вывод их на консоль
-        byte processorCores = 4;
+       
+       byte processorCores = 4;
        short frequency = 1800;
        int RAM = 8192;
        long GPU = 2048;
-       float cost = 1400_56;
+       float cost = 1400.56f;
        double discount = 10.99;
        char symbols = '$';
+       
        System.out.println("1. Создание переменных и вывод их на консоль");
-       System.out.println("Number of processor cores = " + processorCores 
-       + " CPU frequency = " + frequency + " RAM = " + RAM + " GPU = " + GPU
-       + " Cost = " + cost + " discount = " + discount + " Currency = " + symbols);
+       System.out.println("Number of processor cores: " + processorCores + "\n" 
+            + "CPU frequency: " + frequency + "\n" 
+            + "RAM: " + RAM + " GPU: " + GPU + "\n"
+            + "Cost: " + cost + " discount: " + discount +"\n"
+            + "Currency: " + symbols);
+
        //Расчет стоимости товара со скидкой
        System.out.println();
        System.out.println("2. Расчет стоимости товара со скидкой");
@@ -20,6 +25,7 @@ public class VariablesTheme {
        discount = 0.11;
        System.out.println("Сумма скидки = " + (firstPrice + secondPrice)*discount);
        System.out.println("Общая стоимость товара со скидкой = " + ((firstPrice + secondPrice) - (firstPrice + secondPrice)*discount));
+       
        //Вывод на консоль слово Java
        System.out.println();
        System.out.println("3. Вывод на консоль слово JAVA");
@@ -28,6 +34,7 @@ public class VariablesTheme {
        System.out.println("J  J  aaaaa  V V  aaaaa  ");
        System.out.println(" JJ  a     a  V  a     a ");
        System.out.println();
+       
        //Отображение min и max значений числовых типов данных
        System.out.println("4. Отображение min и max значений числовых типов данных");
        byte byteMax = Byte.MAX_VALUE;
@@ -36,9 +43,9 @@ public class VariablesTheme {
        short shortMin = Short.MIN_VALUE;
        int intMax = Integer.MAX_VALUE;
        int intMin = Integer.MIN_VALUE;
-       System.out.println("byte max value = " + byteMax + " byte min value = " + byteMin
-       + " short max value = " + shortMax + " short min value = " + shortMin
-       + " int max value = " + intMax + " int min value = " + intMin);
+       System.out.println("byte max value = " + byteMax + " byte min value = " + byteMin + "\n"
+            + "short max value = " + shortMax + " short min value = " + shortMin + "\n"
+            + "int max value = " + intMax + " int min value = " + intMin);
        System.out.format("byteMax increment = %d  byteMax decrement = %d%n",++byteMax,--byteMax);
        System.out.format("byteMin increment = %d  byteMin decrement = %d%n",++byteMin,--byteMin);
        System.out.format("shortMax increment = %d shortMax decrement = %d%n",++shortMax,--shortMax);
@@ -46,6 +53,7 @@ public class VariablesTheme {
        System.out.format("intMax increment = %d  intMax decrement = %d%n",++intMax,--intMax);
        System.out.format("intMin increment = %d  intMin decrement = %d%n",++intMin,--intMin);
        System.out.println();
+
        //Перестановка значений переменных
        System.out.println("5. Перестановка значений переменных");
        int firstVariable = 5;
@@ -72,6 +80,7 @@ public class VariablesTheme {
        System.out.format("%d  %s%n",d ,(char)d);
        System.out.format("%d  %s%n",e ,(char)e);
        System.out.println();
+       
        //Произведение и сумма цифр числа
        System.out.println("7. Произведение и сумма цифр числа");
        int number = 345;
@@ -87,7 +96,5 @@ public class VariablesTheme {
        sumOfNumbers += number % 10;
        number /=10;
        System.out.println("Произведение чисел = " + productOfNumbers + " Сумма чисел = " + sumOfNumbers);
-       
-
     }    
 }
