@@ -1,27 +1,125 @@
 public class Jaeger {
-    String modelName = "Bracer Phoenix";
-    String mark = "Mark-5";
-    String origin = "USA";
-    float height = 70.7f;
-    float weight = 2.1f;
-    int speed = 3;
-    int strength = 8;
-    int armor = 9;
     
-    boolean drift() {
+    private String modelName;
+    private String mark;
+    private String origin;
+    private float height;
+    private float weight;
+    private int speed;
+    private int strength;
+    private int armor;
+    
+    public String getModelName() {
+        return this.modelName;
+    }
+
+    public void setModelName(String modelName) {
+        if (modelName == "") {
+            System.out.println("Model not be empty!");
+        } else {
+            this.modelName = modelName;
+        }
+        
+    }
+
+    public String getMark() {
+        return this.mark;
+    }
+
+    public void setMark(String mark) {
+        if (mark == "") {
+            System.out.println("Mark not be empty!");
+        } else {
+            this.mark = mark;
+        }
+    }
+
+    public String getOrigin() {
+        return this.origin;
+    }
+
+    public void setOrigin(String origin) {
+        if (origin == "") {
+            System.out.println("Origin not be empty");
+        } else {
+            this.origin = origin;
+        }
+    }
+    
+    public float getHeight() {
+        return this.height;
+    }
+
+    public void setHeight(float height) {
+        if (height <= 0) {
+            System.out.println("Incorrect height");
+        } else {
+            this.height = height;
+        }
+    }
+
+    public float getWeight() {
+        return weight;
+    }
+
+    public void setWeight(float weight) {
+        if (weight <= 0) {
+            System.out.println("Incorrect weight");
+        } else {
+            this.weight = weight;
+        }
+    }
+
+    public int getSpeed() {
+        return this.speed;
+    }
+
+    public void setSpeed(int speed) {
+        if (speed <=0) {
+            System.out.println("Incorrect speed");
+        } else {
+            this.speed = speed;
+        }
+    }
+
+    public int getStrength() {
+        return this.strength;
+    }
+
+    public void setStrength(int strength) {
+        if (strength <= 0) {
+            System.out.println("Incorrect strength");
+        } else {
+            this.strength = strength;
+        }
+    }
+
+    public int getArmor(){
+        return this.armor;
+    }
+
+    public void setArmor(int armor) {
+        if (armor <= 0){
+            System.out.println("Incorrect armor");
+        } else {
+            this.armor = armor;
+        }
+    }
+
+    public boolean drift() {
         System.out.println("Drift activated");
         return true;
     }
 
-    void move() {
+    public void move() {
         System.out.println("moving");
     }
 
-    String scanKaiju() {
+    public String scanKaiju() {
         return "nothing";
     }
 
-    void useVortexCannon() {
-
+    public void useVortexCannon() {
+        System.out.println("You're use vortex");
     }
 }
