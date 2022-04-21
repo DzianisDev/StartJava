@@ -1,3 +1,4 @@
+package com.startjava.lesson_1.variables;
 public class VariablesTheme {
     public static void main(String[] args) {
        //Создание переменных и вывод их на консоль
@@ -74,11 +75,11 @@ public class VariablesTheme {
        byte c = 64;
        byte d = 94;
        byte e = 95;
-       System.out.format("%d  %s%n",a ,(char)a);
-       System.out.format("%d  %s%n",b ,(char)b);
-       System.out.format("%d  %s%n",c ,(char)c);
-       System.out.format("%d  %s%n",d ,(char)d);
-       System.out.format("%d  %s%n",e ,(char)e);
+       System.out.format("%d  %s%n", a, (char)a);
+       System.out.format("%d  %s%n", b, (char)b);
+       System.out.format("%d  %s%n", c, (char)c);
+       System.out.format("%d  %s%n", d, (char)d);
+       System.out.format("%d  %s%n", e, (char)e);
        System.out.println();
        
        //Произведение и сумма цифр числа
@@ -94,7 +95,7 @@ public class VariablesTheme {
        number /=10;
        productOfNumbers *= number % 10;
        sumOfNumbers += number % 10;
-       number /=10;
+       number /= 10;
        System.out.println("Произведение чисел = " + productOfNumbers + " Сумма чисел = " + sumOfNumbers);
     }    
 }

@@ -1,3 +1,4 @@
+package com.startjava.lesson_1.cycle;
 public class CyclesTheme {
     public static void main(String[] args){
         //Подсчет суммы четных и нечетных чисел от [-10,21] Cycle do-while;
@@ -6,13 +7,13 @@ public class CyclesTheme {
         int value = -10;
         System.out.println("1. Подсчет суммы четных и нечетных чисел от -10 до 21 ");
         do{
-            if(value % 2 == 0){
+            if (value % 2 == 0){
                 sumOfEvenNumbers += value;
-            }else{
+            } else {
                 sumOfOddNumbers += value;
             }
             value++;
-        }while(value != 21);
+        } while (value != 21);
         System.out.println("Сумма четных чисел = "+sumOfEvenNumbers+" Сумма нечетных чисел = " + sumOfOddNumbers+" Значение Value = "+ value);
         System.out.println();
 
@@ -23,19 +24,19 @@ public class CyclesTheme {
         int min = 0;
         if(max < a){
             max = a;
-        } else if(max < b) {
+        } else if (max < b) {
             max = b;
-        } else if (max < c){
+        } else if (max < c) {
             max = c;
         }
-        if(min > a){
+        if (min > a) {
             min = a;
-        } else if(min > b){
+        } else if (min > b) {
             min = b;
-        } else if (min > c){
+        } else if (min > c) {
             min = c;
         }
-        for(int i = min; i <= max; i++){
+        for (int i = min; i <= max; i++){
             System.out.print(i+" ");
         }
         //Вывод реверсивного числа и суммы его цифр 1234
@@ -45,11 +46,11 @@ public class CyclesTheme {
         int reverseNumber =0;
         int sumNumber=0;
         System.out.println("Исходное число = " + number);
-        while(number != 0){
+        while (number != 0) {
             reverseNumber = 10 * reverseNumber + number % 10;
             System.out.println(number % 10);
-            sumNumber +=number%10;
-            number /=10;
+            sumNumber += number % 10;
+            number /= 10;
         }
         System.out.println("Реверсивное число = " + reverseNumber+" сумма чисел = " +sumNumber);
         //Вывод чисел на консоль в несколько строк
@@ -57,17 +58,16 @@ public class CyclesTheme {
         System.out.println("4. Вывод чисел на консоль в несколько строк");
         int valueCount = 0;
         int lineCount = 1;
-        for (int i=1; i<=24; i+=2){
+        for (int i=1; i<=24; i+=2) {
             System.out.format("%2d ",i);
             valueCount++;
-            if(valueCount % 5 == 0){
+            if (valueCount % 5 == 0) {
                 System.out.println();
                 lineCount++;
             }
         }
-        if((valueCount+lineCount) % 5 == 0){
-            for(int j =0;j<lineCount;j++){
-                
+        if ((valueCount + lineCount) % 5 == 0){
+            for (int j =0; j<lineCount; j++){
                 System.out.format("%2d ",0);
             }
         }
@@ -78,23 +78,22 @@ public class CyclesTheme {
         int numberUnit = 31415191;
         int unitCounter = 0;
         System.out.println("Дано число: " + numberUnit);
-        while(numberUnit>0){
-            if(numberUnit % 10 == 1){
+        while (numberUnit>0) {
+            if (numberUnit % 10 == 1) {
                 unitCounter++;
             }
             numberUnit /= 10;
         }
-        if(unitCounter % 2 == 0){
+        if (unitCounter % 2 == 0) {
             System.out.println("Количество единиц в числе = " + unitCounter + " , четное");
-        }else {
+        } else {
             System.out.println("Количество единиц в числе = " + unitCounter + " , нечетное");
         }
         //Отображение фигур в консоли
         System.out.println("6. Отображение фигур в консоли");
         System.out.println("Прямоугольник");
-        for(int i=0; i < 5; i++){
-            for(int j=0; j < 10; j++)
-            {
+        for (int i=0; i < 5; i++) {
+            for (int j=0; j < 10; j++) {
                 System.out.print("*");
             }
             System.out.println();
@@ -102,8 +101,8 @@ public class CyclesTheme {
         System.out.println("Прямоугольный треугольник");
         int size = 5, temp = 0;
         
-        while(size != 0){
-            while(temp != size){
+        while (size != 0) {
+            while (temp != size) {
                 System.out.print("#");
                 temp++;
             }
@@ -116,8 +115,8 @@ public class CyclesTheme {
         System.out.println("Вывод таблицы ASCII");
         System.out.println("DEC CHAR");
         
-        for(int i = 0; i<=127; i++){
-            System.out.println(i+" "+(char)i);
+        for (int i = 0; i<=127; i++) {
+            System.out.println(i + " " + (char)i);
         }
     }
 }

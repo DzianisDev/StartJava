@@ -1,3 +1,4 @@
+package com.startjava.lesson_2_3.calculator;
 public class Calculator {
         /*
         * над целыми положительными числами программа 
@@ -5,7 +6,6 @@ public class Calculator {
         */
       private int firstNumber;
       private int secondNumber;
-      private int result = 0;
       private char mathOperation;
 
       public void setFirstNumber(int firstNumber) {
