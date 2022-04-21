@@ -26,7 +26,7 @@ public class Calculator {
             case '+':
                 return add();
             case '-':
-                return substract();
+                return subtract();
             case '*':
                 return multiply();
             case '/':
@@ -45,7 +45,7 @@ public class Calculator {
         return this.firstNumber + this.secondNumber;
     }
 
-    private int substract() {
+    private int subtract() {
         return this.firstNumber - this.secondNumber;
     }
 
