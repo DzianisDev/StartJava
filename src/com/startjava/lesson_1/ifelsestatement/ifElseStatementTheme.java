@@ -1,4 +1,5 @@
 package com.startjava.lesson_1.ifelsestatement;
+
 public class ifElseStatementTheme {
     public static void main(String[] args) {
         //Перевод псевдокода на язык Java
@@ -37,8 +38,8 @@ public class ifElseStatementTheme {
         System.out.println("2. Поиск максимального и минимального числа");
         int a = 10;
         int b = 23;
-        if ( a > b) {
-            System.out.println(" Max = " + a + " Min = " + b );
+        if (a > b) {
+            System.out.println(" Max = " + a + " Min = " + b);
         } else {
             System.out.println("Max = " + b + " Min = " + a);
         }
@@ -52,7 +53,7 @@ public class ifElseStatementTheme {
             System.out.println(" Число = " + number + " является нечетным");
         }
         if (number != 0) {
-            System.out.println(" Число = " + number + " не является нулевым" );
+            System.out.println(" Число = " + number + " не является нулевым");
         } else {
             System.out.println(" Число является нулевым");
         }
@@ -71,22 +72,22 @@ public class ifElseStatementTheme {
                 System.out.println(firstNumber % 10);
             }
             firstNumber /= 10;
-            secondNumber /=10;
+            secondNumber /= 10;
         }
 
         //Определение буквы, числа или символа по их коду
         System.out.println("5. Определение буквы, числа или символа по их коду");
         char symbol = '\u007B';
-        System.out.println("Символ = "+symbol);
-        for(int i = 0; i < 128; i++) {
-            if((symbol == (char)i) && i>=48 && i<=57) {
+        System.out.println("Символ = " + symbol);
+        for (int i = 0; i < 128; i++) {
+            if ((symbol == (char) i) && i >= 48 && i <= 57) {
                 System.out.println("Символ является числом");
-            } else if ((symbol == (char)i) && i>=65 && i<=90
-            || ((symbol == (char)i) && i>=97 && i<=122)) {
+            } else if ((symbol == (char) i) && i >= 65 && i <= 90
+                    || ((symbol == (char) i) && i >= 97 && i <= 122)) {
                 System.out.println("Символ является буквой");
-            } else if (((symbol == (char)i) && i>=0 && i<=47) ||
-            ((symbol == (char)i) && i>=58 && i<=64) || ((symbol == (char)i) && i >=91 && i<=96)
-            || ((symbol == (char)i) && i>=123 && i<=127)) {
+            } else if (((symbol == (char) i) && i >= 0 && i <= 47) ||
+                    ((symbol == (char) i) && i >= 58 && i <= 64) || ((symbol == (char) i) && i >= 91 && i <= 96)
+                    || ((symbol == (char) i) && i >= 123 && i <= 127)) {
                 System.out.println("Символ относится к специальным");
             }
         }
@@ -96,7 +97,7 @@ public class ifElseStatementTheme {
         double deposit = 30_001;
         double percent = 0;
         if (deposit < 100_000) {
-            percent = 0.05; 
+            percent = 0.05;
         } else if (deposit >= 100_000 && deposit <= 300_000) {
             percent = 0.07;
         } else if (deposit > 300_000) {
@@ -106,7 +107,7 @@ public class ifElseStatementTheme {
         depositAccrual = deposit * percent;
         double totalAmount = deposit + depositAccrual;
         System.out.println("Сумма вклада: " + deposit + "\n"
-            + "Начисленно: " + depositAccrual + "\n"
-            + "Итоговая сумма: " + totalAmount );
-    }   
+                + "Начисленно: " + depositAccrual + "\n"
+                + "Итоговая сумма: " + totalAmount);
+    }
 }

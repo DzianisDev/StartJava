@@ -1,6 +1,7 @@
 package com.startjava.lesson_2_3.robot;
+
 public class Jaeger {
-    
+
     private String modelName;
     private String mark;
     private String origin;
@@ -9,7 +10,7 @@ public class Jaeger {
     private int speed;
     private int strength;
     private int armor;
-    
+
     public String getModelName() {
         return this.modelName;
     }
@@ -20,7 +21,7 @@ public class Jaeger {
         } else {
             this.modelName = modelName;
         }
-        
+
     }
 
     public String getMark() {
@@ -46,7 +47,7 @@ public class Jaeger {
             this.origin = origin;
         }
     }
-    
+
     public float getHeight() {
         return this.height;
     }
@@ -76,7 +77,7 @@ public class Jaeger {
     }
 
     public void setSpeed(int speed) {
-        if (speed <=0) {
+        if (speed <= 0) {
             System.out.println("Incorrect speed");
         } else {
             this.speed = speed;
@@ -95,12 +96,12 @@ public class Jaeger {
         }
     }
 
-    public int getArmor(){
+    public int getArmor() {
         return this.armor;
     }
 
     public void setArmor(int armor) {
-        if (armor <= 0){
+        if (armor <= 0) {
             System.out.println("Incorrect armor");
         } else {
             this.armor = armor;

@@ -1,12 +1,14 @@
 package com.startjava.lesson_2_3.calculator;
+
 import java.util.Scanner;
+
 public class CalculatorTest {
-    
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Calculator calc = new Calculator();
         String choice;
-        
+
         do {
             System.out.println("Введите первое число: ");
             calc.setFirstNumber(scanner.nextInt());

@@ -1,5 +1,7 @@
 package com.startjava.lesson_2_3.game;
+
 import java.util.Scanner;
+
 public class GuessNumberTest {
 
     public static void main(String[] args) {
@@ -14,10 +16,10 @@ public class GuessNumberTest {
         System.out.print("Type your name, player two: ");
         playerTwo = new Player(scanner.next());
         guessNumberGame = new GuessNumber(playerOne, playerTwo);
-        
+
         do {
             guessNumberGame.startGame();
-            while(true) {
+            while (true) {
                 System.out.println(playerOne.getName() + " is trying guess number! Your number is: ");
                 playerOne.setNumber(scanner.nextInt());
                 if (guessNumberGame.checkMove(playerOne))
@@ -31,7 +33,7 @@ public class GuessNumberTest {
                 System.out.println("Would you like to continue? [yes/no]");
                 choice = scanner.next();
             } while (!choice.equals("no") && !choice.equals("yes"));
-            
+
         } while (!choice.equals("no"));
     }
 }

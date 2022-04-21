@@ -1,5 +1,7 @@
 package com.startjava.lesson_2_3.game;
+
 import java.util.Random;
+
 public class GuessNumber {
 
     private int number;
@@ -22,7 +24,7 @@ public class GuessNumber {
     }
 
     public boolean checkMove(Player player) {
-        if(player.getNumber() == this.number) {
+        if (player.getNumber() == this.number) {
             win(player);
             return true;
         } else {
@@ -31,11 +33,11 @@ public class GuessNumber {
         }
     }
 
-    private void win(Player player){
+    private void win(Player player) {
         System.out.println("Congratulations!" + player.getName() + " Your number: " + player.getNumber() + " is TRUE!");
     }
 
     private void lose(Player player) {
-        System.out.println("Ohh, damn, " + player.getName() + " Your number: " + player.getNumber() + " you lose :(" );
+        System.out.println("Ohh, damn, " + player.getName() + " Your number: " + player.getNumber() + " you lose :(");
     }
 }
